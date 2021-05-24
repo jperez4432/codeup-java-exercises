@@ -24,6 +24,7 @@ public class consoleIO {
         int num = scanner.nextInt();
         System.out.printf("Youre number is %d%n", num);
 
+
     }
 
 }

@@ -26,14 +26,49 @@ public class ControlFlow {
 //            System.out.println(i);
 //        }
 
-// 1b-3
-//        long i = 2;
-//        do {
-//            System.out.println(i);
-//            i *= i;
-//        }while(i < 1000000);
+        Scanner entry = new Scanner(System.in);
+        int pin = 12345;
+        for (int i = 1; i <= 3; i++) {
+            System.out.println("Please enter your pin");
+            int userEntry = entry.nextInt();
 
+            if (userEntry == pin)
+            {
+                System.out.println("Correct, come on in!");
+                i = 3;
+            } else if (i == 3) {
+                System.out.println("Due to multiple failed attempts, you are locked out");
+            } else {
+                System.out.println("Incorrect, try again");
+            }
+        }
+
+// 1b-3
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("What number would you like see on the table? ");
+//        int userInt = scanner.nextInt();
+//        System.out.println("");
+//        System.out.println("Here is your table!");
+//        System.out.println("");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | -----");
+//
+//        for (int i = 1; i <= userInt; i++) {
+//            System.out.println(i + "      | " + (i * i) + "       |" + "  " + (i * i * i));
+//        }
+//
+//
+//        System.out.print("What grade number would you like converted?");
+//        int userEntry = scanner.nextInt();
+//
+//        if (userEntry == 80-100) {
+//
+//        }
+//        System.out.printf("You entered %d%n", userEntry);
 
 
     }
 }
+
+

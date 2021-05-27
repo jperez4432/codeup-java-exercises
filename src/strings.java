@@ -18,7 +18,6 @@ public class strings {
         String firstLetterJuan = ("" + juan.charAt(0)).toLowerCase(Locale.ROOT);
         System.out.println("Juan and June start with the same letter?: " + june.startsWith(firstLetterJuan));
 
-
         String coolCats = "Cool Cats are cool, and we like it like that.";
         System.out.println(coolCats.startsWith("Cool Cats are cool"));
         System.out.println(coolCats.toLowerCase(Locale.ROOT).startsWith("cool cats are cool"));

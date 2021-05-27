@@ -12,7 +12,5 @@ public class StringExercise {
         String fourth = "I can do backslashes \\, double backslashes \\\\, and the amazing triple backslash \\\\\\!";
         System.out.println(fourth);
 
-
-
     }
 }

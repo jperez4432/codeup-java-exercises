@@ -19,7 +19,8 @@ public class Bob {
                 System.out.println("Whatever.");
             }
             System.out.println("Would you like to keep trying to talk to Bob? Answer yes/no");
-            response = sc.next();
+            Scanner scan = new Scanner(System.in);
+            response = scan.next();
         } while (response.equals("yes") || response.equals("Yes"));
     }
 }

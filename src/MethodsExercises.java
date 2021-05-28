@@ -79,21 +79,36 @@ public class MethodsExercises {
 //    }
 
 
-
-
 //    public static int dice(Scanner sc) {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("How many sides would you like on your dice?");
 //
 //    }
 
+    public static String factorial(Scanner sc) {
+       // Scanner sc = new Scanner(System.in);
+        System.out.println("Pick a number between 1 and 10");
+        int userInput;
+        userInput = sc.nextInt();
+//        System.out.println(userInput);
+        int i, fact = 1;
+        int count = 1;
+        int count2 = 2;
+        int count3 = 3;
+//        int number=5;//It is the number to calculate factorial
+        for (i = 1; i <= userInput; i++) {
+
+            fact = fact * i;
+            System.out.println(i + "!= " + fact );
+           // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
+
+        }
+        return "Factorial of " + userInput + " is: " + fact;
+    }
+
 
     public static void main(String[] args) {
-        int i,fact=1;
-        int number=5;//It is the number to calculate factorial
-        for(i=1;i<=number;i++){
-            fact=fact*i;
-        }
+
 
 
 
@@ -103,9 +118,8 @@ public class MethodsExercises {
         System.out.println(divide(100, 10));
         System.out.println(modulus(26, 15));
         System.out.println(getInteger(1, 9));
-        System.out.println("Factorial of "+number+" is: "+fact);
-
-//        System.out.println(factorial(4));
+        System.out.println(factorial(new Scanner(System.in)));
+    //        System.out.println(factorial(4));
      //   System.out.println(dice(new Scanner(System.in)));
     }
 }

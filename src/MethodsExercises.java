@@ -53,7 +53,7 @@ public class MethodsExercises {
         }
     }
 
-    //public static int factorial() {
+//    public static int factorial(Scanner sc) {
 //    System.out.println("Enter a number from 1 - 10.\n");
 //    Scanner sc = new Scanner(System.in);
 //    int userNumber = sc.nextInt();
@@ -62,32 +62,51 @@ public class MethodsExercises {
 //    }
 //    System.out.println("Factorial of %d is " + fact + "" , userNumber);
 //}
-    public static int factorial(int n) {
-        if (n == 0)
-            return 1;
-        else
-            return (n * factorial(n - 1));
-    }
+// recursion method
+//    public static int factorial(int n) {
+//        if (n == 0) {
+//            return 1;
+//        } else {
+//            int i = 1;
+//            long fact = 1;
+//            int number = 4;//It is the number to calculate factorial
+//            fact = factorial(number);
+//            System.out.println("Factorial of " + number + " is: " + fact);
+//            return (n * factorial(n - 1));
+//
+//
+//        }
+//    }
 
-    public static void main(String args) {
-        int i, fact = 1;
-        int number = 4;//It is the number to calculate factorial
-        fact = factorial(number);
-        System.out.println("Factorial of " + number + " is: " + fact);
-    }
 
 
 
+//    public static int dice(Scanner sc) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("How many sides would you like on your dice?");
+//
+//    }
 
 
     public static void main(String[] args) {
+        int i,fact=1;
+        int number=5;//It is the number to calculate factorial
+        for(i=1;i<=number;i++){
+            fact=fact*i;
+        }
+
+
+
         System.out.println(multiply(1, 2));
         System.out.println(add(20,10));
         System.out.println(subtract(30, 19));
         System.out.println(divide(100, 10));
         System.out.println(modulus(26, 15));
         System.out.println(getInteger(1, 9));
-        System.out.println(factorial(4));
+        System.out.println("Factorial of "+number+" is: "+fact);
+
+//        System.out.println(factorial(4));
+     //   System.out.println(dice(new Scanner(System.in)));
     }
 }
 

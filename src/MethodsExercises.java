@@ -86,24 +86,28 @@ public class MethodsExercises {
 //    }
 
     public static String factorial(Scanner sc) {
-       // Scanner sc = new Scanner(System.in);
-        System.out.println("Pick a number between 1 and 10");
-        int userInput;
-        userInput = sc.nextInt();
+       //  Scanner scanner = new Scanner(System.in);
+        String choice;
+        do {
+            int userInput;
+            System.out.println("Pick a number between 1 and 10");
+            userInput = sc.nextInt();
 //        System.out.println(userInput);
-        int i, fact = 1;
-        int count = 1;
-        int count2 = 2;
-        int count3 = 3;
+            int i, fact = 1;
+            int count = 1;
+            int count2 = 2;
+            int count3 = 3;
+           String userChoice = sc.next();
 //        int number=5;//It is the number to calculate factorial
-        for (i = 1; i <= userInput; i++) {
-
-            fact = fact * i;
-            System.out.println(i + "!= " + fact );
-           // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
-
-        }
-        return "Factorial of " + userInput + " is: " + fact;
+            for (i = 1; i <= userInput; i++) {
+                fact = fact * i;
+                System.out.println(i + "!= " + fact);
+                // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
+            }
+            // for some reason the user choice forces you to include the answer while you input the number of your choice
+            return "Factorial of " + userInput + " is: " + fact + ". Would you like to continue? Enter Yes/No" + userChoice;
+           // System.out.println("Would you like to continue? Enter Yes/No");
+        } while (choice.equals("Yes") || choice.equals("yes"));
     }
 
 

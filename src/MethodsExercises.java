@@ -84,19 +84,31 @@ public class MethodsExercises {
 //        return factorial();
 //    }
 
-
-    public static int dice (){
-        System.out.println("Welcome to the Dice Game! We will be rolling two dice and displaying the sum. How may sides would you like your dice to have?");
+// issue is how to format these do while loops, i thought the if else statement could work but need to find out how to have it continue to next method. (example in above if you run it
+    //need to study more regarding the do while or what im doing wrong so that they dont properly loop through. Doing that thing where it takes int input then waits for the yes as well
+    public static String dice () {
         Scanner sc = new Scanner(System.in);
-        int sides = sc.nextInt();
-        int die1 = (int)(Math.random()* sides +1);
-        int die2 = (int)(Math.random()* sides +1);
-        int result = die1 + die2;
-        System.out.println("Are you ready to roll!? ");
-        // System.out.println(die);
-        return result;
-    }
+        String userResponse;
 
+
+
+            System.out.println("Welcome to the Dice Game! We will be rolling two dice and displaying the sum. How may sides would you like your dice to have?");
+            do {
+            int sides = sc.nextInt();
+            int die1 = (int) (Math.random() * sides + 1);
+            int die2 = (int) (Math.random() * sides + 1);
+            int result = die1 + die2;
+            userResponse = sc.next();
+            String displayResult = "Your result is " + result + "!";
+            System.out.println("Would you like to continue playing?");
+            return displayResult;
+           // String question = "Would you like to continue playing?";
+
+
+            // System.out.println(die);
+            //  return result;
+        } while (userResponse.equals("Y") || userResponse.equals("y"));
+    }
     public static void main(String[] args) {
 
 

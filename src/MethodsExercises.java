@@ -86,29 +86,32 @@ public class MethodsExercises {
 //    }
 
     public static String factorial() {
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String choice;
-        do {
 
-            int userInput;
-            System.out.println("Pick a number between 1 and 10");
-            userInput = sc.nextInt();
-            int i, fact = 1;
-            int count = 1;
-            int count2 = 2;
-            int count3 = 3;
 
-            for (i = 1; i <= userInput; i++) {
+        int userInput;
+        System.out.println("Pick a number between 1 and 10");
+        userInput = sc.nextInt();
+        int i, fact = 1;
 
-                fact = fact * i;
-                System.out.println(i + "!= " + fact);
-                // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
-            }
-            System.out.println("Factorial of " + userInput + " is: " + fact + ".\nWould you like to continue? Enter Yes/No");
-            return choice = sc.next();
-          // return choice;
-            //get the loop to continue now
-        } while (choice.equals("Yes") || choice.equals("yes"));
+        for (i = 1; i <= userInput; i++) {
+            fact = fact * i;
+            System.out.println(i + "!= " + fact);
+            // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
+        }
+        System.out.println("Factorial of " + userInput + " is: " + fact + ".\nWould you like to continue? Enter Yes/No");
+        choice = sc.next();
+        if (choice.equals("Yes") || choice.equals("yes")) {
+            return factorial();
+        } else {
+            System.out.println("Thank you!");
+        }
+        return factorial();
+
+        // return choice;
+        //get the loop to continue now
+        //  } while (choice.equals("Yes") || choice.equals("yes"));
     }
 
 

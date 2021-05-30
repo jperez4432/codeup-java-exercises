@@ -53,67 +53,49 @@ public class MethodsExercises {
         }
     }
 
-//    public static int factorial(Scanner sc) {
-//    System.out.println("Enter a number from 1 - 10.\n");
-//    Scanner sc = new Scanner(System.in);
-//    int userNumber = sc.nextInt();
-//    for (i = 1; i <=userNumber; i++){
-//        fact = fact*i;
-//    }
-//    System.out.println("Factorial of %d is " + fact + "" , userNumber);
-//}
-// recursion method
-//    public static int factorial(int n) {
-//        if (n == 0) {
-//            return 1;
-//        } else {
-//            int i = 1;
-//            long fact = 1;
-//            int number = 4;//It is the number to calculate factorial
-//            fact = factorial(number);
-//            System.out.println("Factorial of " + number + " is: " + fact);
-//            return (n * factorial(n - 1));
-//
-//
-//        }
-//    }
-
-
 //    public static int dice(Scanner sc) {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("How many sides would you like on your dice?");
 //
 //    }
+// only issue is trying to find out how to skip to next method since its an if else statement
+//    public static String factorial() {
+//        Scanner sc = new Scanner(System.in);
+//        String choice;
+//
+//
+//        int userInput;
+//        System.out.println("Pick a number between 1 and 10");
+//        userInput = sc.nextInt();
+//        int i, fact = 1;
+//
+//        for (i = 1; i <= userInput; i++) {
+//            fact = fact * i;
+//            System.out.println(i + "!= " + fact);
+//            // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
+//        }
+//        System.out.println("Factorial of " + userInput + " is: " + fact + ".\nWould you like to continue? Enter Yes/No");
+//        choice = sc.next();
+//        if (choice.equals("Yes") || choice.equals("yes")) {
+//            return factorial();
+//        } else {
+//            System.out.println("Thank you!");
+//        }
+//        return factorial();
+//    }
 
-    public static String factorial() {
+
+    public static int dice (){
+        System.out.println("Welcome to the Dice Game! We will be rolling two dice and displaying the sum. How may sides would you like your dice to have?");
         Scanner sc = new Scanner(System.in);
-        String choice;
-
-
-        int userInput;
-        System.out.println("Pick a number between 1 and 10");
-        userInput = sc.nextInt();
-        int i, fact = 1;
-
-        for (i = 1; i <= userInput; i++) {
-            fact = fact * i;
-            System.out.println(i + "!= " + fact);
-            // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
-        }
-        System.out.println("Factorial of " + userInput + " is: " + fact + ".\nWould you like to continue? Enter Yes/No");
-        choice = sc.next();
-        if (choice.equals("Yes") || choice.equals("yes")) {
-            return factorial();
-        } else {
-            System.out.println("Thank you!");
-        }
-        return factorial();
-
-        // return choice;
-        //get the loop to continue now
-        //  } while (choice.equals("Yes") || choice.equals("yes"));
+        int sides = sc.nextInt();
+        int die1 = (int)(Math.random()* sides +1);
+        int die2 = (int)(Math.random()* sides +1);
+        int result = die1 + die2;
+        System.out.println("Are you ready to roll!? ");
+        // System.out.println(die);
+        return result;
     }
-
 
     public static void main(String[] args) {
 
@@ -126,7 +108,8 @@ public class MethodsExercises {
         System.out.println(divide(100, 10));
         System.out.println(modulus(26, 15));
         System.out.println(getInteger(1, 9));
-        System.out.println(factorial());
+    //    System.out.println(factorial());
+        System.out.println(dice());
     //        System.out.println(factorial(4));
      //   System.out.println(dice(new Scanner(System.in)));
     }

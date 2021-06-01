@@ -1,16 +1,30 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.Scanner;
+
 public class Person {
-    public String name = "Juan";
+    private String name;
 
-
-    public String getName() {
-        // System.out.println(name);
+     public static String getName(String name) {
         return name;
     }
 
+    public static void setName(String name) {
+
+    }
+
+    public void sayHello() {
+        System.out.println("Hello " + name);
+    }
+
+    public Person(String name) {
+         this.name = name;
+    }
+    public Person(){}
+
     public static void main(String[] args) {
-        System.out.println();
+         Person testPerson = new Person("Juan");
+        System.out.println(getName(testPerson.name));
+        // System.out.println(testPerson.getName());
     }
 }
-

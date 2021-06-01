@@ -21,6 +21,5 @@ public class Car {
         car1.model = "Toyota Camry";
         System.out.println(car1.model);
 
-
     }
 }

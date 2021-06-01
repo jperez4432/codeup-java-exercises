@@ -32,7 +32,7 @@ public class UserManager {
                     editPreferences(u);
                     break;
                 case 2:
-                    u.descibeUser();
+                    //u.descibeUser();
                     editPreferences(u);
                     break;
                 case 3:

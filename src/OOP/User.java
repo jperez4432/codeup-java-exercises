@@ -9,9 +9,7 @@ public class User {
 
     public User() {};
 
-    public String getPassword() {
-        return password;
-    }
+    public String getPassword() { return password; }
     public String setPassword(String password) {
        return this.password = password;
     }
@@ -31,7 +29,7 @@ public class User {
     }
 
 
-    public void descibeUser() {
+    public void describeUser() {
         System.out.println("Username: " + this.username);
         System.out.println("Password: " + this.password);
         System.out.println("Email: " + this.email);

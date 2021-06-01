@@ -62,8 +62,6 @@ public class MethodsExercises {
     public static String factorial() {
         Scanner sc = new Scanner(System.in);
         String choice;
-
-
         int userInput;
         System.out.println("Pick a number between 1 and 10");
         userInput = sc.nextInt();
@@ -74,30 +72,21 @@ public class MethodsExercises {
             System.out.println(i + "!= " + fact);
             // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
         }
-
         System.out.println("Factorial of " + userInput + " is: " + fact + ".\nWould you like to continue? Enter Yes/No");
         choice = sc.next();
         while (choice.equalsIgnoreCase("yes")){
             return factorial();
         }
         return thanks;
-           //return System.out.println("Thank you!");
-
-
+           // return System.out.println("Thank you!");
         //return factorial();
     }
-
-// issue is how to format these do while loops, i thought the if else statement could work but need to find out how to have it continue to next method. (example in above if you run it
+    // issue is how to format these do while loops, i thought the if else statement could work but need to find out how to have it continue to next method. (example in above if you run it
     //need to study more regarding the do while or what im doing wrong so that they dont properly loop through. Doing that thing where it takes int input then waits for the yes as well
-
-
 
         public static String dice () {
         Scanner sc = new Scanner(System.in);
         String userResponse;
-
-
-
             System.out.println("Welcome to the Dice Game! We will be rolling two dice and displaying the sum. How may sides would you like your dice to have?");
             do {
             int sides = sc.nextInt();
@@ -109,17 +98,19 @@ public class MethodsExercises {
             System.out.println("Would you like to continue playing?");
             return displayResult;
            // String question = "Would you like to continue playing?";
-
-
             // System.out.println(die);
             //  return result;
         } while (userResponse.equals("Y") || userResponse.equals("y"));
     }
+
+    public static String game() {
+        Scanner sc = new Scanner(System.in);
+        int number = (int)(Math.random() * 100);
+        String output = "Your number is " + number;
+        return output;
+    }
+
     public static void main(String[] args) {
-
-
-
-
         System.out.println(multiply(1, 2));
         System.out.println(add(20,10));
         System.out.println(subtract(30, 19));
@@ -128,6 +119,7 @@ public class MethodsExercises {
         System.out.println(getInteger(1, 9));
         System.out.println(factorial());
         System.out.println(dice());
+        System.out.println(game());
     //        System.out.println(factorial(4));
      //   System.out.println(dice(new Scanner(System.in)));
     }

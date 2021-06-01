@@ -56,7 +56,7 @@ public class UserTools {
         } else {
             System.out.println("Please enter a new username");
             String newUsername = scanner.nextLine();
-            u.setUsername(newUsername);
+            //u.setUsername(newUsername);
             System.out.println("Your new username is: " + newUsername);
         }
     }

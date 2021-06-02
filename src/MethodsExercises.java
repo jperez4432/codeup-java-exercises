@@ -1,6 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
 
-import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -25,21 +23,6 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
-//    public static int getInteger(int min, int max) {
-//        Scanner sc = new Scanner(System.in);
-//        String userEntry;
-//        do {
-//            System.out.println("Enter a number between 1 and 10\n");
-//            userEntry = sc.next();
-//            if (min < 0 || max > 10) {
-//                System.out.println("Try again!");
-//            } else if (min >= 0 && max <= 10) {
-//                System.out.println("Great job!");
-//            }
-//        }   while ()
-//
-//    }
-
     public static int getInteger(int min, int max) {
         System.out.printf("Give me a number between %d and %d\n", min, max);
         Scanner scanner = new Scanner(System.in);
@@ -54,12 +37,6 @@ public class MethodsExercises {
         }
     }
 
-//    public static int dice(Scanner sc) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("How many sides would you like on your dice?");
-//
-//    }
-// only issue is trying to find out how to skip to next method since its an if else statement
     public static String factorial() {
         Scanner sc = new Scanner(System.in);
         String choice;
@@ -71,7 +48,6 @@ public class MethodsExercises {
         for (i = 1; i <= userInput; i++) {
             fact = fact * i;
             System.out.println(i + "!= " + fact);
-            // System.out.println( i + "! = " + count++ + "X" + count2++ +"X" + fact);
         }
         System.out.println("Factorial of " + userInput + " is: " + fact + ".\nWould you like to continue? Enter Yes/No");
         choice = sc.next();
@@ -79,12 +55,8 @@ public class MethodsExercises {
             return factorial();
         }
         return thanks;
-           // return System.out.println("Thank you!");
-        //return factorial();
-    }
-    // issue is how to format these do while loops, i thought the if else statement could work but need to find out how to have it continue to next method. (example in above if you run it
-    //need to study more regarding the do while or what im doing wrong so that they dont properly loop through. Doing that thing where it takes int input then waits for the yes as well
 
+    }
         public static String dice () {
         Scanner sc = new Scanner(System.in);
         String userResponse;

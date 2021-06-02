@@ -12,12 +12,12 @@ public class Circle {
     }
 
     public double getArea() {
-       // System.out.println("The area of the circle is ");
+        System.out.println("The area of the circle is ");
     return Math.PI * (Radius * Radius);
     }
 
     public double getCircumference() {
-       // System.out.println("The circumference of the circle is ");
+        System.out.println("The circumference of the circle is ");
         return Math.PI * 2*Radius;
     }
 }

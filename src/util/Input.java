@@ -14,6 +14,7 @@ public class Input {
         String userSentence = sc.nextLine();
         System.out.println("Your sentence is " + userSentence);
         return userSentence;
+        // this.sc = new Scanner(System.in);
     }
 
     public boolean yesOrNo() {
@@ -27,9 +28,12 @@ public class Input {
         }
         System.out.println("Your boolean is: " + result);
         return result;
+        //String userInput = this,sc,nextLine();
+        //return userInput.trim().equalsIgnoreCase("y") || userInput.trim().equalsIgnoreCase("yes");
     }
 
     public int getInt(int min, int max) {
+
         System.out.printf("Please enter a number between %d and %d: %n", min, max);
         int userInputNum = sc.nextInt();
         if (userInputNum > max || userInputNum < min) {
@@ -55,7 +59,7 @@ public class Input {
     public double getDoubles(int min, int max) {
         System.out.println("Enter a number");
         double userDouble = sc.nextDouble();
-        if (userDouble > max || userDouble < min) {
+        if (userDouble >= max || userDouble <= min) {
             System.out.println("Invalid entry. Please try again");
             return getDoubles(min, max);
         } else {

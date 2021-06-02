@@ -2,12 +2,12 @@ package util;
 
 public class InputTest {
     public static void main(String[] args) {
-        Input il = new Input();
+        Input in = new Input();
 
-        il.getString();
-        il.yesOrNo();
-        il.getInt(1,100);
-        il.getDouble();
+        in.getString();
+        in.yesOrNo();
+        in.getInt(1,100);
+        in.getDouble();
 
     }
 }

@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Circle {
     private Scanner sc = new Scanner(System.in);
-    private int Radius;
+    private double Radius;
 
 
     public Circle(double radius) {
-
+        this.Radius = radius;
     }
 
     public double getArea() {

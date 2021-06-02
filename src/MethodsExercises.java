@@ -111,21 +111,25 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
         String thanks = "Thank you for playing";
         String wrong = "NOPE! TRY AGAIN!";
-        int number = (int)(Math.random() * 100);
+        int number = (int) (Math.random() * 100);
         System.out.println("Welcome to the Guessing Game! You must pick a number between 1 and 100\nWhat is your first guess?");
         int userGuess = sc.nextInt();
-        if (userGuess == number) {
-            System.out.println("WOW! Great guess!");
-            return thanks;
-        } else if (userGuess > number){
-            System.out.println("Too High! Try again.");
-            userGuess = sc.nextInt();
-        } else if (userGuess < number) {
-            System.out.println("Too Low! Try again");
-            userGuess = sc.nextInt();
+        for (int i = 1; i <= 5; i++) {
+            if (userGuess == number) {
+                System.out.println("WOW! GOOD GUESS!");
+                return thanks;
+
+            } else if (userGuess > number) {
+                System.out.println("Lower! Try again.");
+
+                userGuess = sc.nextInt();
+            } else if (userGuess < number) {
+                System.out.println("Higher! Try again");
+                userGuess = sc.nextInt();
+            }
         }
-        System.out.println("Your number is " + number);
-        return thanks;
+            System.out.println("Your number is " + number);
+            return thanks;
     }
 
     public static void main(String[] args) {

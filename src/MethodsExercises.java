@@ -1,5 +1,6 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -88,26 +89,43 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
         String userResponse;
             System.out.println("Welcome to the Dice Game! We will be rolling two dice and displaying the sum. How may sides would you like your dice to have?");
-            do {
             int sides = sc.nextInt();
             int die1 = (int) (Math.random() * sides + 1);
             int die2 = (int) (Math.random() * sides + 1);
             int result = die1 + die2;
-            userResponse = sc.next();
             String displayResult = "Your result is " + result + "!";
-            System.out.println("Would you like to continue playing?");
-            return displayResult;
-           // String question = "Would you like to continue playing?";
-            // System.out.println(die);
-            //  return result;
-        } while (userResponse.equals("Y") || userResponse.equals("y"));
-    }
+            System.out.println(displayResult);
+            System.out.println("Would you like to continue playing? Enter Yes or No");
+            userResponse = sc.next();
+
+            if (userResponse.equalsIgnoreCase("yes")) {
+                return dice();
+            } else {
+                String thanks = "Thank you for playing";
+                return thanks;
+            }
+        }
+
 
     public static String game() {
         Scanner sc = new Scanner(System.in);
+        String thanks = "Thank you for playing";
+        String wrong = "NOPE! TRY AGAIN!";
         int number = (int)(Math.random() * 100);
-        String output = "Your number is " + number;
-        return output;
+        System.out.println("Welcome to the Guessing Game! You must pick a number between 1 and 100\nWhat is your first guess?");
+        int userGuess = sc.nextInt();
+        if (userGuess == number) {
+            System.out.println("WOW! Great guess!");
+            return thanks;
+        } else if (userGuess > number){
+            System.out.println("Too High! Try again.");
+            userGuess = sc.nextInt();
+        } else if (userGuess < number) {
+            System.out.println("Too Low! Try again");
+            userGuess = sc.nextInt();
+        }
+        System.out.println("Your number is " + number);
+        return thanks;
     }
 
     public static void main(String[] args) {

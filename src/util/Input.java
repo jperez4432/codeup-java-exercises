@@ -48,6 +48,7 @@ public class Input {
         System.out.println("Enter a number");
         int userInput = sc.nextInt();
         return userInput;
+        //return this.sc.nextInt();
     }
 
     public double getDouble() {

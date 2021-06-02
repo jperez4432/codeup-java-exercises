@@ -8,5 +8,6 @@ public class InputTest {
         il.yesOrNo();
         il.getInt(1,100);
         il.getDouble();
+
     }
 }

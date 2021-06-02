@@ -32,6 +32,7 @@ public class Person {
         System.out.println(testPerson.getName());
         testPerson.setName("ramon");
         System.out.println(testPerson.getName());
+        testPerson.sayHello();
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");

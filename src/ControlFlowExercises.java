@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ControlFlow {
+public class ControlFlowExercises {
     public static void main(String[] args) {
 //        int x = 5;
 //        if (x == 5) {

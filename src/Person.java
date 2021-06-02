@@ -3,15 +3,15 @@ import org.w3c.dom.ls.LSOutput;
 import java.util.Scanner;
 
 public class Person {
-
+   // public String jan;
     private String name;
 
-     public static String getName(String name) {
+     public String getName() {
         return name;
     }
 
-    public static void setName(String name) {
-         name = name;
+    public void setName(String name) {
+         this.name = name;
     }
 
     public void sayHello() {
@@ -26,9 +26,13 @@ public class Person {
 
     public static void main(String[] args) {
          Person testPerson = new Person("Juan");
-         Person testPerson2 = new Person("Juan");
-         testPerson.name = setName();
-        System.out.println(getName(testPerson.name));
+        // Person testPerson2 = new Person("Juan");
+       //  Person alex = new Person("Alex");
+       //  testPerson.name = setName();
+        System.out.println(testPerson.getName());
+        testPerson.setName("ramon");
+        System.out.println(testPerson.getName());
+
 
       //  System.out.println(setName("Jason"));
         // System.out.println(testPerson.getName());

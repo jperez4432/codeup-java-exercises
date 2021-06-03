@@ -3,6 +3,7 @@ public class Duck extends Bird {
     //inherits all public methods
 
         public void makeNoise(){
-            System.out.println(this.getName() + " goes Quack Quack!");
+            super.makeNoise();
+            System.out.println("Quack Quack!");
         }
 }

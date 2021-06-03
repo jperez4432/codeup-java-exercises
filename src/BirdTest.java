@@ -8,18 +8,18 @@ public class BirdTest {
 //        cardinal.makeNoise();
 //        cardinal.move();
 
-//        Duck mallard = new Duck();
-//        mallard.setName("Mallard");
-//        mallard.makeNoise();
-//
+        Duck mallard = new Duck();
+        mallard.setName("Mallard");
+        mallard.makeNoise();
+
 //        Finch lesserGoldFinch = new Finch();
 //        lesserGoldFinch.setName("Lesser Goldfinch");
 //        lesserGoldFinch.makeNoise();
-        Penguins penguins = new Penguins();
-        penguins.setName("Emperor Penguin");
-        penguins.setCanFly(false);
-        penguins.move();
-        penguins.makeNoise();
+//        Penguins penguins = new Penguins();
+//        penguins.setName("Emperor Penguin");
+//        penguins.setCanFly(false);
+//        penguins.move();
+//        penguins.makeNoise();
 
     }
 }

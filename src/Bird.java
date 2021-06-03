@@ -1,5 +1,5 @@
 import org.w3c.dom.ls.LSOutput;
-
+//Super class
 public class Bird {
     // can it fly?
     private boolean canFly;
@@ -25,7 +25,7 @@ public class Bird {
 
     public void makeNoise() {
 
-        System.out.println("Tweet tweet");
+        System.out.print(this.getName() + " goes ");
     }
 
     public void move() {

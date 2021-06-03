@@ -70,6 +70,7 @@ public class ArraysLec {
             System.out.println();
         }
 
+
         System.out.println("+---+---+---+");
             }
         }

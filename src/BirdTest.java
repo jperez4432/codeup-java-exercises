@@ -7,11 +7,11 @@ public class BirdTest {
 //        cardinal.setCanFly(true);
 //        cardinal.makeNoise();
 //        cardinal.move();
-
-        Duck mallard                          =    new Duck();
-        //declare a reference variable     assigned    call the default constructor
-        mallard.setName("Mallard");
-        mallard.makeNoise();
+//
+//        Duck mallard                          =    new Duck();
+//        //declare a reference variable     assigned    call the default constructor
+//        mallard.setName("Mallard");
+//        mallard.makeNoise();
 
 //        Finch lesserGoldFinch = new Finch();
 //        lesserGoldFinch.setName("Lesser Goldfinch");
@@ -24,7 +24,8 @@ public class BirdTest {
 //        penguins.makeNoise();
 
         //Polymorphism allows us tp have different reference and object types
-        Bird myPenguin = new Penguins();
+      //  Bird myPenguin = new Penguins();
 
+        Finch houseFinch = new Finch();
     }
 }

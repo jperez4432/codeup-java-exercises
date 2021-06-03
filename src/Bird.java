@@ -31,9 +31,11 @@ public class Bird {
     public void move() {
         System.out.println("flap flap");
     }
-
-
     public Bird(){
-
+        System.out.println("A Bird just got created");
+    }
+    public Bird(String nameOfThisBird, boolean isCanFly){
+        this.name = nameOfThisBird;
+        this.canFly = isCanFly;
     }
 }

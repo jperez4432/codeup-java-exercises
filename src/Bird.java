@@ -24,10 +24,13 @@ public class Bird {
     }
 
     public void makeNoise() {
+
         System.out.println("Tweet tweet");
     }
 
     public void move() {
         System.out.println("flap flap");
     }
+
+
 }

@@ -5,7 +5,8 @@ public class Finch extends Bird {
         System.out.println("Tweet Tweet!");
     }
         public Finch(){
-        super(); //must be first or it wont work
+        super();
+        //must be first or it wont work
         System.out.println("A finch just got created");
 
     }

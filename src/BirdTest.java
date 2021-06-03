@@ -27,5 +27,7 @@ public class BirdTest {
       //  Bird myPenguin = new Penguins();
 
         Finch houseFinch = new Finch();
+        Bird piratesBestFriend = new Bird();
+        System.out.println(piratesBestFriend.getName());
     }
 }

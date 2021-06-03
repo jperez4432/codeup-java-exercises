@@ -1,4 +1,5 @@
 import org.w3c.dom.ls.LSOutput;
+
 //Super class
 public class Bird {
     // can it fly?
@@ -12,6 +13,7 @@ public class Bird {
 
         this.canFly = canFly;
     }
+
     //what kind of bird?
     private String name;
 
@@ -31,11 +33,15 @@ public class Bird {
     public void move() {
         System.out.println("flap flap");
     }
-    public Bird(){
-        System.out.println("A Bird just got created");
-    }
-    public Bird(String nameOfThisBird, boolean isCanFly){
+
+    public Bird(String nameOfThisBird, boolean isCanFly) {
         this.name = nameOfThisBird;
         this.canFly = isCanFly;
+
+    public Bird() {
+            System.out.println("A Bird just got created");
+            this.canFly = true;
+            this.name = "Parrot";
+        }
     }
 }

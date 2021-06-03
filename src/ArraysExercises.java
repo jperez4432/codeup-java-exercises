@@ -1,29 +1,28 @@
 import java.util.Arrays;
 public class ArraysExercises {
+    public static Person[] addPerson(Person[] array, Person newPerson) {
+     Person[] people = Arrays.copyOf(array, array.length + 1);
+     people[array.length] = newPerson;
+     return people;
+    }
+
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(Arrays.toString(numbers));
+        // int[] numbers = {1, 2, 3, 4, 5};
+        // System.out.println(Arrays.toString(numbers));
 
-        String[]  Person = {"Barry", "Deion", "Randy"};
-      //  System.out.println(Arrays.toString(Person));
-        for (String n : Person) {
-            System.out.println(n);
+        //String[]  Person = {"Barry", "Deion", "Randy"};
+        Person[] people = new Person[3];
+        people[0] = new Person("Barry");
+        people[1] = new Person("Deion");
+        people[2] = new Person("Randy");
+        for (Person person : people) {
+            System.out.println(person.getName());
         }
-
-            Person[] people = new Person[3];
-            System.out.println(Arrays.toString(people));
-
-            people[0] = new Person("Evan");
-            people[1] = new Person("Evan");
-            people[2] = new Person("Evan");
-
-            Person[] addPerson = Arrays.copyOf(people, 4);
-
-            for (Person name : addPerson) {
-                System.out.println(name);
-            }
-
-            Person[3] = "Juan";
-
+        System.out.println("______");
+        Person Jerry = new Person("Jerry");
+        people = addPerson(people, Jerry);
+        for (Person person : people) {
+            System.out.println(person.getName());
+        }
     }
 }

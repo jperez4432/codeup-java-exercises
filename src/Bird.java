@@ -37,11 +37,11 @@ public class Bird {
     public Bird(String nameOfThisBird, boolean isCanFly) {
         this.name = nameOfThisBird;
         this.canFly = isCanFly;
-
+    }
     public Bird() {
             System.out.println("A Bird just got created");
             this.canFly = true;
             this.name = "Parrot";
         }
-    }
+
 }

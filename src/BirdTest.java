@@ -25,9 +25,12 @@ public class BirdTest {
 
         //Polymorphism allows us tp have different reference and object types
       //  Bird myPenguin = new Penguins();
+//
+//        Finch houseFinch = new Finch();
+//        Bird piratesBestFriend = new Bird();
+//        System.out.println(piratesBestFriend.getName());
 
-        Finch houseFinch = new Finch();
-        Bird piratesBestFriend = new Bird();
-        System.out.println(piratesBestFriend.getName());
+        Finch cassinsFinch = new Finch("Cassin's Finch", true);
+        System.out.println(cassinsFinch.getName());
     }
 }

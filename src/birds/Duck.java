@@ -1,3 +1,5 @@
+package birds;
+
 public class Duck extends Bird {
     // inherits from bird
     //inherits all public methods

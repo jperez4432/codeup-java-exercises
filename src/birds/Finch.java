@@ -1,5 +1,7 @@
+package birds;
+
 public class Finch extends Bird {
-    // inherits makeNoise() from Bird
+    // inherits makeNoise() from birds.Bird
     public void makeNoise(){
         super.makeNoise();
         System.out.println("Tweet Tweet!");

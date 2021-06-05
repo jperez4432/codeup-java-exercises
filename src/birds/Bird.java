@@ -1,3 +1,5 @@
+package birds;
+
 import org.w3c.dom.ls.LSOutput;
 
 //Super class
@@ -39,7 +41,7 @@ public class Bird {
         this.canFly = isCanFly;
     }
     public Bird() {
-            System.out.println("A Bird just got created");
+            System.out.println("A birds.Bird just got created");
             this.canFly = true;
             this.name = "Parrot";
         }

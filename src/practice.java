@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class practice {
     public static void main(String[] args) {
-        String greet = "Hello World!";
-        String world = "World";
-        System.out.println(greet.indexOf("!"));
+
+
+
+
+
+//        String greet = "Hello World!";
+//        String world = "World";
+//        System.out.println(greet.indexOf("!"));
 
 
 

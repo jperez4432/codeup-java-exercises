@@ -1,8 +1,48 @@
 import java.util.Scanner;
 
 public class practice {
-    public static void main(String[] args) {
 
+    public static void count(int n) {
+        if (n <= 0) {
+            System.out.println("All done!");
+            return;
+        }
+        System.out.println(n);
+        count(n - 1);
+    }
+
+    public static void main(String[] args) {
+        count(5);
+    }
+
+
+//    public static String sayHello(String name) {
+//        return String.format("Hello, %s!", name);
+//    }
+//
+//
+
+// version 1
+//        public static void sayHello(int times) {
+//            for (int i = 0; i < times; i += 1) {
+//                sayHello();
+//            }
+//        }
+// version 2
+//        public static void sayHello() {
+//            sayHello("Hello", "World");
+//        }
+// version 3
+     //   public static void sayHello(String name) {
+ //           sayHello("Hello", name);
+ //       }
+// version 4
+//        public static void sayHello(String greeting, String name) {
+//            System.out.println(greeting + ", " + name + "!");
+//        }
+//        public static void main(String[] args) {
+
+       // System.out.println(sayHello("Juan"));
 
 
 

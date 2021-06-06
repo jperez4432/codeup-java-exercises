@@ -3,7 +3,8 @@ import util.Input;
 import java.util.Scanner;
 
 public class CircleApp {
-    static Scanner sc = new Scanner(System.in);
+    // doesnt seem like this was necessary at all
+    // static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
        // System.out.println("Enter the radius of the circle: ");

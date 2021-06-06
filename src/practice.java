@@ -1,20 +1,33 @@
 import java.util.Scanner;
 
 public class practice {
-
-    public static void count(int n) {
-        if (n <= 0) {
-            System.out.println("All done!");
-            return;
+    public static long getPower(int base, int exponent) {
+        if (exponent == 0) {
+            return 1;
+        } else if (exponent == 1) {
+            return base;
+        } else if (exponent == 2) {
+            return base * base;
         }
-        System.out.println(n);
-        count(n - 1);
+        return base * getPower(base, exponent - 1);
     }
 
     public static void main(String[] args) {
-        count(5);
-
+        System.out.println(getPower(3, 3));
     }
+//    public static void count(int n) {
+//        if (n <= 0) {
+//            System.out.println("All done!");
+//            return;
+//        }
+//        System.out.println(n);
+//        count(n - 1);
+//    }
+//
+//    public static void main(String[] args) {
+//        count(5);
+//
+//    }
 }
 
 //    public static String sayHello(String name) {

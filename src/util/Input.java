@@ -50,7 +50,7 @@ public class Input {
         return userInput;
         //return this.sc.nextInt();
     }
-
+// whats used on the circle app to use the user input for the radius
     public double getDouble() {
         System.out.println("Enter a number");
         double userEntry = sc.nextDouble();

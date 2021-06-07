@@ -3,11 +3,16 @@ import java.util.ArrayList;
 
 public class Student {
     private String name;
+    private String username;
     private ArrayList<Integer> grades; // =  new ArrayList<>();
 
     public Student (String name) {
         this.name = name;
         this.grades = new ArrayList<>();
+    }
+    public String getUsername() {
+        return this.username = username;
+
     }
 
     public String getName() {
@@ -19,14 +24,13 @@ public class Student {
     public void addGrade(int grade) {
         grades.add(grade);
     }
-
     public void getGradeAverage() {
         int total = 0;
         for (int i = 0; i < grades.size(); i++) {
             total = total + grades.get(i);
         }
             int average = total / grades.size();
-            System.out.printf("The Average is: %d", average);
+            System.out.printf("The Average is: %d\n", average);
     }
 
     public static void main(String[] args) {

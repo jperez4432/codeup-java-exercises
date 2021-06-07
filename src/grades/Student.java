@@ -24,13 +24,15 @@ public class Student {
     public void addGrade(int grade) {
         grades.add(grade);
     }
-    public void getGradeAverage() {
+    public int getGradeAverage() {
         int total = 0;
         for (int i = 0; i < grades.size(); i++) {
             total = total + grades.get(i);
         }
             int average = total / grades.size();
-            System.out.printf("The Average is: %d\n", average);
+        //commented out to make sure the if statement works properly
+            // System.out.printf("The Average is: %d\n", average);
+            return average;
     }
 
     public static void main(String[] args) {

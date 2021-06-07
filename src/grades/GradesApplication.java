@@ -4,12 +4,25 @@ import java.util.HashMap;
 
 public class GradesApplication {
     public static void main(String[] args) {
-        HashMap<String, String> students = new HashMap<>();
+        HashMap<String, ArrayList<Integer>> students = new HashMap<>();
+        ArrayList<Integer> juanGrades = new ArrayList<Integer>();
+        ArrayList<Integer> coderGrades = new ArrayList<Integer>();
 
-        students.put("jperez4432", "90, 95, 100");
-        students.put("Coder4Life", );
-        students.put("HelloWorld", );
-        students.put("FastFingers", );
+        juanGrades.add(100);
+        juanGrades.add(90);
+        juanGrades.add(95);
+        students.put("jperez4432", juanGrades);
+        coderGrades.add(80);
+        coderGrades.add(85);
+        coderGrades.add(89);
+        students.put("Coder4Life", coderGrades);
+//        students.put("HelloWorld", grades);
+//        students.put("FastFingers", grades);
+
         System.out.println(students);
+
+        //CLI
+
+
     }
 }

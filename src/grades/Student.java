@@ -3,9 +3,12 @@ import java.util.ArrayList;
 
 public class Student {
     private String name;
-    public ArrayList<Integer> grades = new ArrayList<>();
+    private ArrayList<Integer> grades; // =  new ArrayList<>();
 
-   // private int[] grade;
+    public Student (String name) {
+        this.name = name;
+        this.grades = new ArrayList<>();
+    }
 
     public String getName() {
         return this.name = name;
@@ -27,8 +30,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student e = new Student();
-        e.name = "Jeff";
+        Student e = new Student("Jeff");
         System.out.println(e.getName());
         e.addGrade(90);
         e.addGrade(100);

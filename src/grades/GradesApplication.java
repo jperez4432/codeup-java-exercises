@@ -24,12 +24,22 @@ public class GradesApplication extends Student {
             System.out.println("Name: " + students.get(entry).getName());
             System.out.println("Username: " + entry);
             System.out.println("Grade average: " + students.get(entry).getGradeAverage());
+            System.out.println("Would you like to continue? Enter Yes/No");
+            String entryOne = sc.next();
+            if (entryOne.equalsIgnoreCase("yes")) {
+                commandLine(list, students);
+            } else if (!entryOne.equalsIgnoreCase("yes")) {
+                System.out.println("Have a nice day!");
+            }
         } else if (!list.contains(entry)) {
             System.out.printf("I'm sorry, but we do not have a user by the name of %s ", entry);
             System.out.println("would you like to try again? Enter Yes/No");
             String answer = sc.next();
             if (answer.equalsIgnoreCase("yes")) {
                 System.out.println("OK!");
+                commandLine(list, students);
+            } else {
+                System.out.println("Have a nice day!");
             }
         }
         return entry;

@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-import org.w3c.dom.ls.LSOutput;
 import util.Input;
 public class GroceryApp {
     public static Input input = new Input();

@@ -30,9 +30,10 @@ public class Person {
        //  Person alex = new Person("Alex");
        //  testPerson.name = setName();
         System.out.println(testPerson.getName());
-        testPerson.setName("ramon");
-        System.out.println(testPerson.getName());
         testPerson.sayHello();
+//        testPerson.setName("ramon");
+//        System.out.println(testPerson.getName());
+//        testPerson.sayHello();
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");

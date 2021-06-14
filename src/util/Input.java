@@ -69,9 +69,14 @@ public class Input {
         }
     }
 
-
-    public static void main(String[] args) {
-
+    public int getInt2(){
+        System.out.print("Enter a number: ");
+        try{
+            return Integer.valueOf(getString());
+        }catch(NumberFormatException nfe){
+            System.out.println("That's not a number!");
+            return getInt2();
+        }
     }
 
 //    public int getInt2(){
@@ -82,4 +87,20 @@ public class Input {
 //            return getInt2();
 //        }
 //    }
+    //testing the examples
+
+//public static void main(String[] args) {
+
+  //  System.out.println(1 / 0);
+//
+//    try {
+//        System.out.println("Let's see...");
+//        int result = 1 / 0;
+//        System.out.println("I can divide by zero!");
+//    } catch (ArithmeticException e) {
+//        System.out.println("Math still works!");
+//    }
+
+
+//}
 }

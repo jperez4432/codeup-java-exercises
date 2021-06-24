@@ -1,18 +1,35 @@
 import java.util.Scanner;
 
 public class practice {
+    public static void main(String[] args) {
 
-    class Person {
-        public String name;
 
-        public Person(String name) {
-            this.name = name;
-        }
-
-        public void sayHello() {
-            System.out.println("Hello from " + name + "!");
-        }
+    String[] names = {"Rick", "Stacey", "Brad", "Becca"};
+    String x;
+try {
+        x = names[100];
+    } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Exception caught!");
+        x = "";
+    } catch (Exception e) {
+        e.printStackTrace();
+    } finally {
+        System.out.println("This will always run.");
     }
+    }
+ }
+
+//    class Person {
+//        public String name;
+//
+//        public Person(String name) {
+//            this.name = name;
+//        }
+//
+//        public void sayHello() {
+//            System.out.println("Hello from " + name + "!");
+//        }
+
 
 
 
@@ -44,7 +61,7 @@ public class practice {
 //        count(5);
 //
 //    }
-}
+
 
 //    public static String sayHello(String name) {
 //        return String.format("Hello, %s!", name);
